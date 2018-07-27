@@ -1,0 +1,13 @@
+<div class="row" id="searchBar">
+  <div class="col-xs-12" >
+      <input type="text" #cardName>
+      <button class="btn btn-primary" (click)="onSearch(cardName.value)" id="searchButton">Search</button>
+  </div>
+</div>
+  <div *ngIf="myCards">
+    <ul>
+      <li *ngFor="let card of myCards.cards">
+        <img src="{{card.imageUrl}}" >     
+     </li>
+    </ul>
+  </div> 
