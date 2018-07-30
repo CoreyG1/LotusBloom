@@ -16,8 +16,7 @@ import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes =[
-  { path: 'search', component: CardlistComponent},
-  { path: '', component: HomeComponent}
+  { path: '', component: CardlistComponent}
 ];
 
 
